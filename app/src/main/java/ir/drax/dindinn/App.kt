@@ -12,6 +12,7 @@ import javax.inject.Inject
 
 class App : Application(), HasAndroidInjector {
 
+
     @Inject
     lateinit var androidInjector: DispatchingAndroidInjector<Any>
 
