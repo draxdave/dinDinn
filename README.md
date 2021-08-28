@@ -1,4 +1,4 @@
-# dinDinn
+# Sample code base (Updated)
 ## Sample project for the interview at DinDinn
 
 ### Technologies
@@ -22,3 +22,4 @@
 * The whole process would be quite simpler and cleaner if we could use Kotlin Coroutines.
 
 That's it. Thanks for reading.
+Refactors will be here ...
