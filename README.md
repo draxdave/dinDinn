@@ -1,4 +1,4 @@
-# Sample code base (Updated)
+# dinDinn (Will be removed soon)
 ## Sample project for the interview at DinDinn
 
 ### Technologies
@@ -15,11 +15,6 @@
 * Thread management is done via [CountdownRunnerView.kt] which is lifecycleAware.
 * View states are handled in such way to consume lowest possible resources.
 * Kotlin DSL is used for Gradle scripts.
-* Unfortunately there was not enough time for me to write test cases.
-  I'm busy with some personal problems these last few weeks an couldn't finish tests.
-  However, if I'd be given another chance there will no such excuse anymore.
-  
 * The whole process would be quite simpler and cleaner if we could use Kotlin Coroutines.
 
 That's it. Thanks for reading.
-Refactors will be here ...
