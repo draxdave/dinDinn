@@ -1,6 +1,7 @@
 # dinDinn (Will be removed soon)
 ## Sample project for the interview at DinDinn
 
+
 ### Technologies
 `Arcitecture`: MVVM
 `Database`: Room
