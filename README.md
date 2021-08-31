@@ -19,4 +19,4 @@
 
 That's it. Thanks for reading.
 
-Yeah! the same line to fire a conflict.
+Yeah! Conflict will be generated here!
