@@ -13,7 +13,7 @@ import ir.drax.dindinn.util.setFragment
 import kotlinx.android.synthetic.main.fragment_orders.*
 
 
-class OrdersFragment() : BaseFragment<FragmentOrdersBinding, SharedViewModel>(FragmentOrdersBinding::inflate) {
+class OrdersFragment : BaseFragment<FragmentOrdersBinding, SharedViewModel>(FragmentOrdersBinding::inflate) {
 
     private lateinit var ordersListAdapter: OrdersListAdapter
 

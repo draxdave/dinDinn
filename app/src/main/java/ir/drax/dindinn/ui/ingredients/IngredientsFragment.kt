@@ -2,6 +2,7 @@ package ir.drax.dindinn.ui.ingredients
 
 import android.os.Bundle
 import android.view.View
+import androidx.activity.OnBackPressedCallback
 import androidx.core.widget.doAfterTextChanged
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
@@ -11,6 +12,7 @@ import ir.drax.dindinn.network.model.Order
 import ir.drax.dindinn.network.model.Type
 import ir.drax.dindinn.ui.BaseFragment
 import ir.drax.dindinn.ui.SharedViewModel
+import ir.drax.dindinn.util.backFragment
 import kotlinx.android.synthetic.main.fragment_ingredients.*
 
 
@@ -54,7 +56,7 @@ class IngredientsFragment() : BaseFragment<FragmentIngredientsBinding, SharedVie
         }
 
         back.setOnClickListener {
-            findNavController().navigateUp()
+            backFragment()
         }
     }
 

@@ -8,6 +8,7 @@
             type="ir.drax.dindinn.ui.SharedViewModel" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ingredientsFragmentRoot"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

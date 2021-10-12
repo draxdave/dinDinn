@@ -162,6 +162,8 @@ dependencies {
     // Espresso
     androidTestImplementation("androidx.test.espresso:espresso-core:3.3.0")
 
+    debugImplementation("androidx.fragment:fragment-testing:1.3.6")
+
 }
 
 

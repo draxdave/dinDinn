@@ -8,19 +8,24 @@ import ir.drax.dindinn.R
 
 
 fun Fragment.openFragment(@NonNull fragmentClass: Class<out Fragment>) {
-    requireFragmentManager().commit {
+    parentFragmentManager.commit {
         add(R.id.nav_host, fragmentClass,null)
     }
 }
 
+fun Fragment.backFragment() {
+    parentFragmentManager.popBackStack()
+}
+
 fun Fragment.setFragment(@NonNull fragmentClass: Class<out Fragment>) {
-    requireFragmentManager().commit {
-        replace(R.id.nav_host, fragmentClass,null)
+    parentFragmentManager.commit {
+        add(R.id.nav_host, fragmentClass,null)
+        addToBackStack(null)
     }
 }
 
 fun AppCompatActivity.openFragment(@NonNull fragmentClass: Class<out Fragment>) {
     supportFragmentManager.commit {
-        replace(R.id.nav_host, fragmentClass,null)
+        add(R.id.nav_host, fragmentClass,null)
     }
 }
