@@ -141,21 +141,27 @@ dependencies {
 
     //===================== TEST DEPENDENCIES =============================
     testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.2")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.3.0")
-    androidTestImplementation("androidx.test:core:1.3.0")
     //arch
     testImplementation("androidx.arch.core:core-testing:2.1.0")
-    androidTestImplementation("androidx.arch.core:core-testing:2.1.0")
     testImplementation("android.arch.core:core-testing:1.1.1")
     //Mockito
     testImplementation("org.mockito:mockito-core:2.28.2")
     testImplementation("org.mockito:mockito-all:1.10.19")
-    androidTestImplementation("org.mockito:mockito-android:2.25.0")
     //mockito-kotlin
     testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
     //for test
     implementation("com.squareup.retrofit2:converter-scalars:2.1.0")
+
+
+    //====================== ANDROID TEST DEPENDCIES =======================
+//    androidTestImplementation("org.mockito:mockito-android:2.25.0")
+    androidTestImplementation("androidx.arch.core:core-testing:2.1.0")
+    androidTestImplementation("androidx.test:core:1.3.0")
+    androidTestImplementation("androidx.test.ext:junit:1.1.2")
+
+    // Espresso
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.3.0")
+
 }
 
 

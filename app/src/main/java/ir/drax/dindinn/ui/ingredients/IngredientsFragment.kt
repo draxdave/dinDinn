@@ -7,13 +7,14 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import io.reactivex.disposables.Disposable
 import ir.drax.dindinn.databinding.FragmentIngredientsBinding
+import ir.drax.dindinn.network.model.Order
 import ir.drax.dindinn.network.model.Type
 import ir.drax.dindinn.ui.BaseFragment
 import ir.drax.dindinn.ui.SharedViewModel
 import kotlinx.android.synthetic.main.fragment_ingredients.*
 
 
-class IngredientsFragment : BaseFragment<FragmentIngredientsBinding, SharedViewModel>(FragmentIngredientsBinding::inflate) {
+class IngredientsFragment() : BaseFragment<FragmentIngredientsBinding, SharedViewModel>(FragmentIngredientsBinding::inflate) {
 
     private lateinit var ingredientAdapter :IngredientsListAdapter
     private var queryJob: Disposable?=null

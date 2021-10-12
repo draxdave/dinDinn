@@ -1,20 +1,19 @@
 package ir.drax.dindinn.ui.orders
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import ir.drax.dindinn.R
 import ir.drax.dindinn.databinding.FragmentOrdersBinding
 import ir.drax.dindinn.ui.BaseFragment
 import ir.drax.dindinn.ui.SharedViewModel
+import ir.drax.dindinn.ui.ingredients.IngredientsFragment
 import ir.drax.dindinn.util.message
+import ir.drax.dindinn.util.setFragment
 import kotlinx.android.synthetic.main.fragment_orders.*
 
 
-class OrdersFragment : BaseFragment<FragmentOrdersBinding, SharedViewModel>(FragmentOrdersBinding::inflate) {
+class OrdersFragment() : BaseFragment<FragmentOrdersBinding, SharedViewModel>(FragmentOrdersBinding::inflate) {
 
     private lateinit var ordersListAdapter: OrdersListAdapter
 
@@ -44,7 +43,9 @@ class OrdersFragment : BaseFragment<FragmentOrdersBinding, SharedViewModel>(Frag
         }
 
         gotoIngredient.setOnClickListener {
-            findNavController().navigate(OrdersFragmentDirections.ordersToIngredients())
+            openIngredientsFragment()
         }
     }
+
+    private fun openIngredientsFragment() = setFragment(IngredientsFragment::class.java)
 }
